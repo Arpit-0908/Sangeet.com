@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --green:#0d9979;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .5s cubic-bezier(.37,1.14,.26,1.24);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.project{
+    background:#333;
+    min-height: 100vh;
+}
+
+.project .heading{
+    color:#fff;
+}
+
+.project .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    width: 90%;
+    margin:0 auto;
+}
+
+.project .box-container .box{
+    flex: 1 1 30rem;
+    height: 22rem;
+    box-shadow: 0 .3rem .5rem #000;
+    margin:1rem;
+    position: relative;
+}
+
+.project .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.project .box-container .box .icons{
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:100%; left: 0;
+    align-items: flex-end;
+    justify-content: space-around;
+    background:linear-gradient(transparent, rgba(0,0,0,.7));
+    transform: scale(0);
+}
+
+.project .box-container .box:hover .icons{
+    top:0;
+    transform: scale(1);
+}
+
+.project .box-container .box .icons a{
+    font-size: 3rem;
+    color:#fff;
+    margin:3rem 0;
+    text-shadow: 0 .3rem .5rem #000;
+    transform: translateY(13rem);
+    transition-delay: calc(.2s * var(--i));
+}
+
+.project .box-container .box:hover .icons a{
+    transform: translateY(0rem);
+}
+
+.footer{
+    background:#333;
+}
+
+
+.footer .credit{
+    text-align: center;
+    color:#fff;
+    font-size: 2rem;
+    width:85%;
+    margin:0 auto;
+    padding:2rem 1rem;
+    border-top: .1rem solid #ccc;
+}
+
+.footer .credit span{
+    color:var(--green);
+}
+.logo {
+    color: #0ef3e4;
+    font-size: 40px;
+    font-family: sans-serif;
+  }
+
+  .logo span {
+    color:#f49702;
+    font-family: sans-serif;
+  }
+
+.menu-bar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background: url(../HTML/images/0.jpg );
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .menu-bar ul li {
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .menu-bar ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    color:wheat;
+    text-decoration: none;
+
+
+  }
+
+  .menu-bar ul li a:hover {
+    color:#000000;
+    background-color: #ffffff;
+  font-weight: 700; 
+  }
+
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
